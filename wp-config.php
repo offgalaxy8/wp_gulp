@@ -17,7 +17,8 @@
  *
  * @package WordPress
  */
-
+define('WP_HOME', 'http://wpgulp.loc/');
+define('WP_SITEURL', 'http://wpgulp.loc/');
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define( 'DB_NAME', 'wp_loc' );
