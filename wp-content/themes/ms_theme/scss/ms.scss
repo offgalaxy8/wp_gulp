@@ -57,14 +57,18 @@ body {
   font-family: futura-light;
   font-weight: 600;
 }
+.content.cont-1 {
+  padding-top: 50px;
+}
 .content {
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 .content h2 {
   font-size: 46px;
   color:#000;
   text-align: center;
   font-family: Futura-Heavy;
+  margin-bottom: 90px;
 }
 .footer {
   background-image: url("/wp-content/uploads/2020/10/pic-min.png");
@@ -102,3 +106,220 @@ body {
   font-size: 18px;
   font-family: futura-light;
 }
+.section-one {
+  display: flex;
+  justify-content: space-between;
+}
+.so-1, .so-2, .so-3 {
+  width: 350px;
+  display: flex;
+  //justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+.so-1 img , .so-2 img, .so-3 img {
+  width: 180px;
+}
+.so-1-in p, .so-2-in p, .so-3-in p {
+  color:#424242;
+  font-family: futura-light;
+  font-size: 17px;
+}
+.so-1-in, .so-2-in, .so-3-in {
+  padding: 18px 34px;
+  margin-top: 60px;
+  border-radius: 5px;
+  min-height: 178px;
+  position: relative;
+}
+.so-1-in {
+  border: 2px solid #08bab1;
+}
+.so-1-in::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #08bab1;
+  right: 160px;
+  top: -20px;
+}
+.so-1-in::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  right: 160px;
+  top: -17px;
+}
+.so-2-in {
+  border: 2px solid #109836;
+}
+.so-2-in::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #109836;
+  right: 160px;
+  top: -20px;
+}
+.so-2-in::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  right: 160px;
+  top: -17px;
+}
+.so-3-in {
+  border: 2px solid #225fd1;
+}
+.so-3-in::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #225fd1;
+  right: 160px;
+  top: -20px;
+}
+.so-3-in::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  right: 160px;
+  top: -17px;
+}
+.so-1 p span, .so-2 p span, .so-3 p span {
+  font-family: Futura-Heavy;
+  font-size: 23px;
+}
+.so-1 p span {
+  color:#08bab1;
+}
+.so-2 p span {
+  color:#109836;
+}
+.so-3 p span {
+  color:#225fd1;
+}
+.section-two {
+  background-image: url("/wp-content/uploads/2020/10/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.section-two h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 46px;
+  margin-top: 0;
+  font-family: Futura-Heavy;
+}
+.section-two form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-two form input {
+  font-family: Futura-Heavy;
+}
+.section-two form input:focus {
+  outline: none;
+}
+.section-two form input[type=text] {
+  border-bottom: 2px solid #00dab9;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  padding: 20px 90px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 22px;
+}
+.section-two form input[type=text]::placeholder {
+  font-family: Futura-Heavy;
+  color: #fff;
+  font-size: 22px;
+  opacity: 0.6;
+}
+.section-two form input[type=submit] {
+  padding: 23px 100px;
+  background: #00dab9;
+  color: #fff;
+  border-radius: 60px;
+  font-size: 22px;
+  border: 0;
+}
+.section-two form input[type=submit]:hover {
+  cursor:pointer;
+}
+.section-three {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.st-in {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.st-in img {
+  width: 170px;
+  margin-bottom: 30px;
+}
+.st-in p {
+  font-family: Futura-Heavy;
+  font-size: 23px;
+  margin: 0;
+}
+.st-in p span {
+  color: #424242;
+  font-family: futura-light;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
