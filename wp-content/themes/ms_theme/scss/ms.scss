@@ -109,6 +109,7 @@ body {
 .section-one {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .so-1, .so-2, .so-3 {
   width: 350px;
