@@ -30,10 +30,11 @@
     </div>
 
     <div class="section-two">
-        <h2>Get notified about launching</h2>
+        <h2 id="h2_text">Get notified about launching</h2>
+        <div id="div"></div>
         <form id="form" method="post">
             <input type="text" name="us_name" placeholder="Enter your email here ">
-            <input type="submit" value="Submit">
+            <input type="button" value="Submit" id="button">
         </form>
     </div>
 
@@ -58,5 +59,6 @@
             </div>
         </div>
     </div>
+
 
 <?php get_footer(); // footer.php ?>

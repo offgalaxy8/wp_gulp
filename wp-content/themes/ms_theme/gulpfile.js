@@ -13,14 +13,14 @@ function css() {
         //.pipe(browserSync.stream());
 }
 
-// function js() {
-//     return src('./js/*.js', { sourcemaps: true })
-//         .pipe(babel({
-//             presets: ['@babel/env']
-//         }))
-//         .pipe(concat('build.min.js'))
-//         .pipe(dest('./js/min', { sourcemaps: true }));
-// }
+function js() {
+    return src('js/*.js', { sourcemaps: true })
+        // .pipe(babel({
+        //     presets: ['@babel/env']
+        // }))
+        .pipe(concat('build.min.js'))
+        .pipe(dest('./js/min', { sourcemaps: true }));
+}
 
 function browser() {
     // browserSync.init({
@@ -31,9 +31,10 @@ function browser() {
     // });
 
     watch('scss/**/*.scss', css);
-    //watch('./js/*.js', js).on('change', browserSync.reload);
+    watch('./js/*.js', js).on('change', browserSync.reload);
+    //watch('js/**/*.js', js);
 }
 
 exports.css = css;
-//exports.js = js;
+exports.js = js;
 exports.default = browser;
